@@ -115,24 +115,6 @@ nav ul li a {
     font-size: small;
 }
 
-footer .footerColumn1 ul {
-    list-style: none;
-}
-
-footer .footerColumn2 ul {
-    list-style: none;
-}
-
-footer .footerColumn3 ul {
-    list-style: none;
-}
-
-
-footer img {
-    width: 300px;
-    margin-left: 22%;
-}
-
 footer {
     background-color: black;
     color: white;
@@ -164,6 +146,50 @@ footer li {
 .footerColumn3 {
     margin: auto;
 }
+
+footer .footerColumn1 ul {
+    list-style: none;
+}
+
+footer .footerColumn2 ul {
+    list-style: none;
+}
+
+footer .footerColumn3 ul {
+    list-style: none;
+}
+
+footer img {
+    width: 250px;
+    margin: auto;
+}
+
+footer .footerColumn1 img{
+    margin-left: 40px;
+}
+
+.footerColumn1 ul{
+    font-family: "Barlow", sans-serif;
+    margin: auto;
+}
+
+footer .footerColumn2 img{
+}
+
+.footerColumn2 ul{
+    font-family: "Barlow", sans-serif;
+    margin: auto;
+}
+
+.footerColumn2 h2{
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.footerColumn3 ul{
+    font-family: "Barlow", sans-serif;
+    margin: auto;
+}
+
 
 .footerRow {
     display: grid;
@@ -214,9 +240,33 @@ footer li {
 
 }
 
+@media screen and (max-width:897px){
+    nav a {
+        font-size: 2vw;
+    }
+    nav ul{
+        margin-left: 50px;
+    }
+
+    nav ul li{
+        margin-left: 15px;
+    }
+}
 
 /* Phone */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
+    nav a {
+        font-size: 2vw;
+    }
+
+    nav ul{
+        margin-left: 50px;
+    }
+
+    nav ul li {
+        margin-left: 15px;
+    }
+
     .card {
         flex: 0 1 calc(25% - 1em);
     }
