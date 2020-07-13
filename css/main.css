@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #F5F5F5;
+}
+
+.headLogo {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    height: auto;
+    max-width: 40vw;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Overpass", sans-serif;
+    color: #000000;
+}
+
+.mainPost {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.mainPost img {
+    max-width: 50vw;
+    height: 500px;
+}
+
+.mainPost .mainDescription {
+    background-color: #ffffff;
+}
+
+.mainPost .mainDescription h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: normal;
+    color: #000000;
+    margin-left: 20px;
+    font-size: calc(1em + 2vw);
+}
+
+.mainPost .mainDescription small {
+    font-family: "Barlow", sans-serif;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.mainPost .mainDescription h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #ff0068;
+    font-size: small;
+    margin-left: 20px;
+}
+
+.mainPost .mainDescription p {
+    margin-left: 20px;
+}
+
+.articles {
+    margin: auto;
+    padding: 10%;
+}
+
+.card {
+    background: white;
+    margin-bottom: 2em;
+}
+
+.articles img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.articleDescription {
+    background-color: #ffffff;
+    padding: 1.4em;
+}
+
+.articleDescription h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: normal;
+    color: #000000;
+    font-size: calc(1em + 1vw);
+    text-align: center;
+}
+
+.articleDescription p {
+    font-family: "Barlow", sans-serif;
+    color: #000000;
+    text-align: center;
+}
+
+.articleDescription h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #ff0068;
+    text-align: center;
+    font-size: small;
+}
+
+footer .footerColumn1 ul {
+    list-style: none;
+}
+
+footer .footerColumn2 ul {
+    list-style: none;
+}
+
+footer .footerColumn3 ul {
+    list-style: none;
+}
+
+
+footer img {
+    width: 300px;
+    margin-left: 22%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    line-height: 1.5;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+footer li {
+    text-align: center;
+}
+
+.footerMain {
+    width: 100vw;
+}
+
+.footerColumn1 {
+    margin: auto;
+}
+
+.footerColumn2 {
+    margin: auto;
+}
+
+.footerColumn3 {
+    margin: auto;
+}
+
+.footerRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .mainPost {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .mainPost img {
+        max-width: 90vw;
+        height: auto;
+    }
+
+    .mainPost {
+        width: 90vw;
+    }
+
+    .card {
+        flex: 0 1 calc(25% - 1em);
+    }
+
+    .articles {
+        padding: 4%;
+    }
+
+    .articleDescription h1 {
+        font-size: calc(1em + 2vw);
+    }
+}
+
+@media screen and (min-width: 60em) {
+
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 0 1 calc(50% - 1em);
+    }
+
+}
+
+
+/* Phone */
+@media screen and (max-width: 480px) {
+    .card {
+        flex: 0 1 calc(25% - 1em);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footerRow {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
