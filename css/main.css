@@ -174,10 +174,6 @@ footer .footerColumn1 img{
     margin: 30px auto auto auto;
 }
 
-footer .footerColumn2 img{
-    
-}
-
 .footerColumn3 li{
     margin-right: 50px;
 }
@@ -292,6 +288,7 @@ footer .footerColumn2 img{
 
     .footerColumn1{
         margin: auto;
+        padding-right: 40px;
     }
 
     .footerColumn2{
