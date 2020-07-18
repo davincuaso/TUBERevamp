@@ -57,6 +57,65 @@ body {
     display: none;
 }
 
+
+.mosaic{
+    display: grid;
+}
+
+.mosaicItem:first-of-type{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 5;
+}
+
+.mosaicItem:last-of-type{
+    grid-column: 1 /span 2;
+    grid-row: 3 / span 5;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+
+.mosaicItem h1{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: normal;
+}
+
+.mosaicItem>img{
+    width: 100%;
+    height: auto;
+}
+
+/* 
+
+.backgroundImage img:nth-child(1){
+    height: 80vh;
+    width: 100%;
+}
+
+.mainArticle{
+    width: 75%;
+    margin: auto;
+}
+
+.backgroundImage img:nth-child(2){
+    max-width: 80vw;
+    height: 600px;
+    position: relative;
+    bottom: 400px;
+}
+
+.mainArticleDescription{
+    background-color: white;
+}
+
+.mainArticleDescription h1{
+
+}
+
+.mainArticleDescription small{
+
+} */
+
 @media (max-width:1000px) {
     .nav>.nav-btn {
         display: inline-block;
@@ -84,6 +143,7 @@ body {
         border-top: 2px solid #eee;
         position: relative;
         top: 20px;
+        right: 10px;
     }
 
     .nav>.nav-links {
@@ -96,6 +156,7 @@ body {
         overflow-y: hidden;
         top: 100px;
         left: 0px;
+        z-index: 999;
     }
 
     .nav>.nav-links>a {
@@ -108,7 +169,20 @@ body {
     }
 
     .nav>#nav-check:checked~.nav-links {
-        height: calc(100vh - 400px);
+        height: calc(100vh - 350px);
         overflow-y: auto;
+    }
+
+    .backgroundImage img{
+        width: 100vw;
+        height: auto;
+    }
+
+    .backgroundImage img:nth-child(2) {
+        max-width: 90vw;
+        height: auto;
+        bottom: 250px;
+        position: relative;
+        right: 50px;
     }
 }
