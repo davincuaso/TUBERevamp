@@ -142,6 +142,56 @@ body {
     height: 100%;
 }
 
+.mosaicItemArticle:first-of-type{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 5;
+}
+
+.mosaicItemArticle:last-of-type{
+    grid-column: 1 /span 2;
+    grid-row: 3 / span 5;
+    margin: auto;
+    width: 80%;
+}
+
+.mosaicItemArticle:last-of-type>img{
+    width: 100%;
+    height: auto;
+}
+
+.article{
+    display: grid;
+    grid-template-areas: 
+    "title title title title"
+    "author . . articleText";
+    grid-gap: 50px;
+    margin: auto;
+    width: 80%;
+}
+
+.title{
+    grid-area: title;
+    font-family: "Barlow", sans-serif;
+    font-weight: normal;
+    font-size: calc(1em + 0.2vw);
+}
+
+.author{
+    grid-area: author;
+    font-family: "Barlow", sans-serif;
+}
+
+.author h2{
+    color: #ff0068;
+}
+
+.articleText{
+    grid-area: articleText;
+    padding: 0px 0px 0px 100px;
+    font-size: calc(1em + 0.5vw);
+    font-family: "Overpass", sans-serif
+}
+
 @media (max-width:1024px) {
     .nav>.nav-btn {
         display: inline-block;
@@ -266,5 +316,40 @@ body {
     .mosaicItemReviews:last-of-type>img{
         width: 100%;
         height: auto;
+    }
+
+    .mosaicItemArticle:first-of-type{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 5;
+    }
+    
+    .mosaicItemArticle:last-of-type{
+        grid-column: 1 /span 2;
+        grid-row: 3 / span 5;
+        width: 92%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mosaicItemArticle:last-of-type>img{
+        width: 100%;
+        height: auto;
+    }
+
+    .article{
+        display: grid;
+        grid-template-areas: 
+        "title title title title"
+        "author author author author"
+        "articleText articleText articleText articleText";
+        grid-gap: 50px;
+        margin: auto;
+        width: 92%;
+    }
+
+    .articleText{
+        grid-area: articleText;
+        padding: 0;
     }
 }
