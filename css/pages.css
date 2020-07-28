@@ -192,6 +192,18 @@ body {
     font-family: "Overpass", sans-serif
 }
 
+.cyanBox{
+    height: 10px;
+    width: 70px;
+    background-color: #ff0068;
+    position: relative;
+    display: inline-block;
+}
+
+.articleText i{
+    margin-left: 10px;
+}
+
 @media (max-width:1024px) {
     .nav>.nav-btn {
         display: inline-block;
