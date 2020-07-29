@@ -37,11 +37,12 @@ nav ul li a {
     justify-content: space-between;
     width: 80%;
     margin: auto;
+    padding-top: 40px;
 }
 
 .mainPost img {
     max-width: 50vw;
-    height: 500px;
+    height: auto;
 }
 
 .mainPost .mainDescription {
@@ -209,16 +210,14 @@ footer .footerColumn1 img{
     .mainPost {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        width: 92%;
+        margin: auto;
+        padding: none;
     }
 
     .mainPost img {
-        max-width: 90vw;
+        max-width: 100%;
         height: auto;
-    }
-
-    .mainPost {
-        width: 90vw;
     }
 
     .card {
