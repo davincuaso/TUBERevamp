@@ -1,0 +1,12 @@
+[
+  {
+    "image": "screens/screen-01.jpg",
+    "caption": "Publication layout with original placeholder content",
+    "kind": "repository-render",
+    "source_commit": "302f0a8820617fe80b83ed093a4c09b810579a43",
+    "source_files": [
+      "index.html",
+      "css/main.css"
+    ]
+  }
+]
